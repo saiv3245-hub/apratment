@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>เข้าสู่ระบบ </title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main class="login-page">
+            <section class="login-cover">
+                <img src="image/login.png" 
+                     alt="ภาพหอพัก" 
+                     class="cover-image"
+                >
+                <div class="cover-content">
+                    <h1>ระบบหอพัก</h1>
+                    <p>ระบบจัดการหอพัก</p>
+                </div>
+            </section>
+            <section class="login-content">
+                <div class="login-box">
+                    <h2 class="login-title">ยินดีต้อนรับ</h2>
+                    <p class="login-subtitle">กรุณาเข้าสู่ระบบเพื่อใช้งาน</p>
+
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">อีเมล</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="name@example.com"
+                                    required
+                                >
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">รหัสผ่าน</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-lock"></i>
+                                </span>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    class="form-control"
+                                    placeholder="กรอกรหัสผ่าน"
+                                    required
+                                >
+
+                                <button type="button" id="togglePassword" class="btn btn-outline-secondary password-button">
+                                    <i id="passwordIcon" class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="login-options mb-4">
+                            <div class="form-check">
+                                <input type="checkbox" id="rememberMe" class="form-check-input">
+                                <label for="rememberMe" class="form-check-label">จดจำฉัน</label>
+                            </div>
+                            <a href="#" class="forgot-password">ลืมรหัสผ่าน?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 login-button">
+                            เข้าสู่ระบบ
+                        </button>
+                    </form>
+                    <div class="register-text">
+                        <span>ยังไม่มีบัญชี?</span>
+                        <a href="register.html">สมัครสมาชิก</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
