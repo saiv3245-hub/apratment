@@ -15,7 +15,7 @@ body{
 }
 
 .login-cover{
-    width: 500px;
+    width: 50%;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
