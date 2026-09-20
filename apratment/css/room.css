@@ -1,0 +1,155 @@
+.room-page .main-navbar {
+    z-index: 1030;
+}
+
+.room-page .sidebar {
+    z-index: 1020;
+}
+
+.room-heading {
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.room-heading > div {
+    min-width: 0;
+}
+
+.room-heading .btn {
+    white-space: nowrap;
+}
+
+.room-page .content-card {
+    height: auto;
+}
+
+.room-caption {
+    margin: 8px 0 0;
+    color: var(--muted, #756456);
+    font-size: 14px;
+}
+
+.room-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.room-filter {
+    padding-bottom: 6px;
+}
+
+.room-page .form-label {
+    color: var(--ink, #32261e);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.room-page .form-control,
+.room-page .form-select {
+    min-height: 42px;
+}
+
+.room-note {
+    margin-top: 18px;
+    color: var(--muted, #756456);
+    font-size: 14px;
+}
+
+.room-table {
+    min-width: 800px;
+}
+
+.room-table th,
+.room-table td {
+    padding: 14px 12px;
+}
+
+.room-table th {
+    white-space: nowrap;
+}
+
+.room-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 240px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.room-empty > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 4px;
+    border-radius: 16px;
+    background-color: var(--brand-soft, #fff0e0);
+    color: var(--brand, #c6530a);
+    font-size: 30px;
+}
+
+.room-empty strong {
+    color: var(--ink, #32261e);
+    font-size: 16px;
+}
+
+.room-empty p {
+    margin: 0;
+    color: var(--muted, #756456);
+    font-size: 14px;
+}
+
+.room-form-help {
+    margin-bottom: 20px;
+    color: var(--muted, #756456);
+    font-size: 14px;
+}
+
+.room-page .modal-content {
+    border: 1px solid var(--line, #eedccb);
+    border-radius: 14px;
+}
+
+.room-page .modal-header,
+.room-page .modal-body,
+.room-page .modal-footer {
+    padding: 20px 24px;
+}
+
+.room-page .modal-title {
+    font-weight: bold;
+}
+
+.room-page textarea.form-control {
+    height: auto;
+    resize: vertical;
+}
+
+.room-page .modal-footer {
+    gap: 8px;
+}
+
+@media (max-width: 575.98px) {
+    .room-page .content-card {
+        padding: 16px;
+    }
+
+    .room-heading > #addRoom {
+        width: 100%;
+    }
+
+    .room-page .modal-header,
+    .room-page .modal-body,
+    .room-page .modal-footer {
+        padding: 16px;
+    }
+
+    .room-connection {
+        padding: 12px 14px;
+    }
+}
