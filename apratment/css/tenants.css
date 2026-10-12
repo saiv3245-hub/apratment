@@ -1,0 +1,161 @@
+.tenants-page .main-navbar {
+    z-index: 1030;
+}
+
+.tenants-page .sidebar {
+    z-index: 1020;
+}
+
+.tenant-heading {
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tenant-heading > div {
+    min-width: 0;
+}
+
+.tenant-heading .btn {
+    white-space: nowrap;
+}
+
+.tenants-page .content-card {
+    height: auto;
+}
+
+.tenant-caption {
+    margin: 8px 0 0;
+    color: var(--muted, #756456);
+    font-size: 14px;
+}
+
+.tenant-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tenants-page .form-label {
+    color: var(--ink, #32261e);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tenants-page .form-control,
+.tenants-page .form-select {
+    min-height: 42px;
+}
+
+.tenant-note {
+    margin-top: 18px;
+    color: var(--muted, #756456);
+    font-size: 14px;
+}
+
+.tenant-table {
+    min-width: 820px;
+}
+
+.tenant-table th,
+.tenant-table td {
+    padding: 14px 12px;
+}
+
+.tenant-table th {
+    white-space: nowrap;
+}
+
+.tenant-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 240px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.tenant-empty > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 4px;
+    border-radius: 16px;
+    background-color: var(--brand-soft, #fff0e0);
+    color: var(--brand, #c6530a);
+    font-size: 30px;
+}
+
+.tenant-empty strong {
+    color: var(--ink, #32261e);
+    font-size: 16px;
+}
+
+.tenant-empty p {
+    margin: 0;
+    color: var(--muted, #756456);
+    font-size: 14px;
+}
+
+.tenant-form-help {
+    margin-bottom: 20px;
+    color: var(--muted, #756456);
+    font-size: 14px;
+}
+
+.tenant-section-title {
+    margin: 0 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line, #eedccb);
+    color: var(--brand-dark, #a64008);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tenants-page .modal-content {
+    border: 1px solid var(--line, #eedccb);
+    border-radius: 14px;
+}
+
+.tenants-page .modal-header,
+.tenants-page .modal-body,
+.tenants-page .modal-footer {
+    padding: 20px 24px;
+}
+
+.tenants-page .modal-title {
+    font-weight: bold;
+}
+
+.tenants-page textarea.form-control {
+    height: auto;
+    resize: vertical;
+}
+
+.tenants-page .modal-footer {
+    gap: 8px;
+}
+
+@media (max-width: 575.98px) {
+    .tenants-page .content-card {
+        padding: 16px;
+    }
+
+    .tenant-heading > #addTenant {
+        width: 100%;
+    }
+
+    .tenants-page .modal-header,
+    .tenants-page .modal-body,
+    .tenants-page .modal-footer {
+        padding: 16px;
+    }
+
+    .tenant-connection {
+        padding: 12px 14px;
+    }
+}
+

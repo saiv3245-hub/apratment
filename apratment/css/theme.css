@@ -1,0 +1,199 @@
+:root {
+    --brand: #c6530a;
+    --brand-dark: #a64008;
+    --brand-rgb: 198, 83, 10;
+    --brand-soft: #fff0e0;
+    --page-bg: #fffaf5;
+    --line: #eedccb;
+    --ink: #32261e;
+    --muted: #756456;
+    --bs-primary: var(--brand);
+    --bs-primary-rgb: var(--brand-rgb);
+    --bs-link-color: var(--brand);
+    --bs-link-color-rgb: var(--brand-rgb);
+    --bs-link-hover-color: var(--brand-dark);
+    --bs-link-hover-color-rgb: 166, 64, 8;
+    --bs-body-color: var(--ink);
+    --bs-body-bg: var(--page-bg);
+    --bs-border-color: var(--line);
+    --bs-secondary-color: var(--muted);
+    --bs-focus-ring-color: rgba(var(--brand-rgb), 0.25);
+}
+
+body {
+    background-color: var(--page-bg);
+    color: var(--ink);
+}
+
+.login-content,
+.sidebar,
+.summary-card,
+.content-card,
+.modal-content {
+    background-color: white;
+}
+
+.login-title,
+.topbar h1,
+.content-card-header h2,
+.modal-title {
+    color: var(--ink);
+}
+
+.login-subtitle,
+.topbar p,
+.room-note,
+.summary-card h2 {
+    color: var(--muted);
+}
+
+.btn.btn-primary {
+    --bs-btn-color: white;
+    --bs-btn-bg: var(--brand);
+    --bs-btn-border-color: var(--brand);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: var(--brand-dark);
+    --bs-btn-hover-border-color: var(--brand-dark);
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: var(--brand-dark);
+    --bs-btn-active-border-color: var(--brand-dark);
+    --bs-btn-disabled-color: white;
+    --bs-btn-disabled-bg: var(--brand);
+    --bs-btn-disabled-border-color: var(--brand);
+    --bs-btn-focus-shadow-rgb: var(--brand-rgb);
+    background-color: var(--brand);
+    border-color: var(--brand);
+    color: white;
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+    color: white;
+}
+
+.btn.btn-primary:active,
+.btn.btn-primary.active {
+    background-color: var(--brand-dark) !important;
+    border-color: var(--brand-dark);
+    color: white;
+}
+
+.btn.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--brand-rgb), 0.25);
+}
+
+.btn.btn-outline-primary,
+.btn.btn-outline-secondary {
+    --bs-btn-color: var(--brand);
+    --bs-btn-border-color: var(--line);
+    --bs-btn-hover-color: var(--brand-dark);
+    --bs-btn-hover-bg: var(--brand-soft);
+    --bs-btn-hover-border-color: var(--brand);
+    --bs-btn-active-color: var(--brand-dark);
+    --bs-btn-active-bg: var(--brand-soft);
+    --bs-btn-active-border-color: var(--brand);
+    --bs-btn-disabled-color: var(--muted);
+    --bs-btn-disabled-border-color: var(--line);
+    --bs-btn-focus-shadow-rgb: var(--brand-rgb);
+    color: var(--brand);
+    border-color: var(--line);
+}
+
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-secondary:hover {
+    background-color: var(--brand-soft);
+    border-color: var(--brand);
+    color: var(--brand-dark);
+}
+
+.forgot-password,
+.register-text a,
+.content-card-header a {
+    color: var(--brand);
+}
+
+.forgot-password:hover,
+.register-text a:hover,
+.content-card-header a:hover {
+    color: var(--brand-dark);
+}
+
+.main-navbar .navbar-brand,
+.sidebar-brand {
+    color: var(--brand);
+}
+
+.menu-link:not(.logout-link):hover,
+.menu-link:not(.logout-link):focus-visible {
+    background-color: var(--brand-soft);
+    color: var(--brand-dark);
+}
+
+.sidebar .menu-link.active,
+.sidebar .menu-link.active:hover,
+.sidebar .menu-link.active:focus-visible {
+    background-color: var(--brand);
+    color: white;
+}
+
+.summary-icon,
+.user-icon {
+    background-color: var(--brand-soft);
+    color: var(--brand);
+}
+
+.sidebar,
+.sidebar-brand,
+.sidebar-bottom,
+.content-card,
+.modal-header,
+.modal-footer {
+    border-color: var(--line);
+}
+
+.form-control,
+.form-select {
+    border-color: var(--line);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    border-color: var(--brand);
+    box-shadow: 0 0 0 0.25rem rgba(var(--brand-rgb), 0.2);
+}
+
+.form-check-input:checked {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+.input-group-text {
+    background-color: var(--brand-soft);
+    border-color: var(--line);
+    color: var(--brand);
+}
+
+.table {
+    --bs-table-border-color: var(--line);
+}
+
+.table thead th {
+    --bs-table-bg: var(--brand-soft);
+    color: var(--brand-dark);
+}
+
+.modal-header {
+    background-color: var(--brand-soft);
+}
+
+.btn-close:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--brand-rgb), 0.25);
+}
+
+.alert-info {
+    --bs-alert-color: var(--brand-dark);
+    --bs-alert-bg: var(--brand-soft);
+    --bs-alert-border-color: var(--line);
+}
